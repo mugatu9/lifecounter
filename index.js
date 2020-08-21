@@ -29,10 +29,11 @@ class Player {
 	}
 
 	createPlayerBlock() {
-		$("body").append("<div class=\"player" + this.playerNum + "\"> \
-			<button class=\"decLife\">-</button> <span class=\"lifeTotal\">" + this.lifeTotal + "</span> <button class=\"incLife\">+</button> <br>\
-			<button class=\"decComm\">-</button> <span class=\"commDamage\">" + this.commanderDam + "</span> <button class=\"incComm\">+</button>\
-			<div>")
+		var playerRef = "#player" + this.playerNum;
+		$("body").append("<div class=\"player\" id=\"player" + this.playerNum + "\"> \
+			<button class=\"decLife\">-</button> <p class=\"lifeTotal\">" + this.lifeTotal + "</p> <button class=\"incLife\">+</button> <br>\
+			<button class=\"decComm\">-</button> <p class=\"commDamage\">" + this.commanderDam + "</p> <button class=\"incComm\">+</button>\
+			</div>")
 	}
 }
 
